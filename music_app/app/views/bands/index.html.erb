@@ -1,0 +1,11 @@
+<form action=" <%= new_band_url %>" value="GET">
+    <input type="hidden" name="authenticity_token" value=" <%= form_authenticity_token %>">
+    <input type="submit" value="Create a Band!">
+</form>
+<br>
+<h2> Bands!! </h2>
+<ul>
+    <% @bands.each do |band| %>
+        <li> <%= band %> </li>
+    <% end %>
+</ul>
